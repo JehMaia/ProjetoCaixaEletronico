@@ -1,7 +1,5 @@
 package br.com.bradesco.caixaeletronico.services;
 
-import java.util.Scanner;
-
 public class SelecionarComando {
 
     private final ListarComandos listarComandos;
@@ -16,7 +14,7 @@ public class SelecionarComando {
 
         this.listarComandos = new ListarComandosImpl();
         this.obtemComando = new ObtemComandoImpl();
-        this.executarComandoEspecifico = new ExecutarComandoEspecificoImpl();
+        this.executarComandoEspecifico = new ExecutarComandoEspecificoImpl(1010 ); //porque dá erro aqui?
 
 
     }
@@ -31,52 +29,4 @@ public class SelecionarComando {
 
     }
 }
-
-
-
-    //private boolean executarComandoEspecifico(int comando) {
-       // boolean resultado = true;
-       // return resultado;
-
-        //If-Else
-
-//        if (comando == 0) {
-//
-//            System.out.println("Finalizando serviços...");
-//            resultado = false;
-//
-//        }else if (comando == 1) {
-//            System.out.println("Realizando Saque!");
-//
-//        } else if (comando == 2) {
-//            System.out.println("Realizando Depósito!");
-//
-//
-//        } else
-//            System.out.println("Opção Inváida. Tente novamente!");
-
-        //Switch - case
-
-//        switch (comando) {
-//            case 0:
-//                System.out.println("Finalizando serviços...");
-//                resultado = false;
-//                break;
-//
-//            case 1:
-//                System.out.println("Realizando Saque!");
-//
-//            case 2:
-//                System.out.println("Realizando Depósito!");
-//
-//            default:
-//                System.out.println("Opção Inváida. Tente novamente!");
-//                break;
-
-
-
-
-
-
-
 

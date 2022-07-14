@@ -9,9 +9,12 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println("Caixa eletrônico ligado! Escolha uma opção:");
+        System.out.println();
+
         SelecionarComando selecionaComando = new SelecionarComando();
+
         while (selecionaComando.executar()) {
-            System.out.println("Se já terminou, pressione 0. Para continuar, escolha outra opção:");
+            System.out.println(" Para continuar, escolha outra opção:");
         }
         System.out.println("Caixa eletrônico desligado!");
     }

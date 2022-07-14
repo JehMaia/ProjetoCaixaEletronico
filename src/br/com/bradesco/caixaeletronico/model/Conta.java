@@ -3,40 +3,48 @@ package br.com.bradesco.caixaeletronico.model;
 public class Conta {
 
     private int numeroDaConta;
-
     private double saldo;
-    public Conta () { //construtor
-        saldo = 0;
+
+    private int numerodaContaOrigem;
+
+
+    public Conta() {
+        saldo = 0; // ideia: toda conta inicia com saldo zerado
     }
+
 
     public int getNumeroDaConta() {
         return numeroDaConta;
     }
 
     public void setNumeroDaConta(int numeroDaConta) {
-
         this.numeroDaConta = numeroDaConta;
+    }
+
+    public int getNumerodaContaOrigem() {
+        return numerodaContaOrigem;
+    }
+
+    public void setNumerodaContaOrigem(int numeroDaConta) {
+        this.numerodaContaOrigem = numeroDaConta;
     }
 
     public double getSaldo() {
         return saldo;
     }
 
-    public void adicionaSaldo (double valor) {
-        saldo = saldo + valor;
-
+    public void adicionaSaldo(double valorASerAdicionado) {
+        saldo = saldo + valorASerAdicionado;
     }
 
-    public boolean retirarSaldo (double valor) {
-
-        if (saldo >= valor ){
-            saldo = saldo - valor;
+    public boolean retirarSaldo (double valorASerRetirado){
+        if (saldo >= valorASerRetirado) {
+            saldo = saldo - valorASerRetirado;
             return true;
-
         } else {
-            System.out.println("Saldo Insuficiente");
+            System.out.println("Saldo insuficiente!");
             return false;
         }
-
     }
+
 }
