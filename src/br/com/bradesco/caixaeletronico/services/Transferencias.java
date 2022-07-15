@@ -7,11 +7,8 @@ public interface Transferencias {
 
     double execute(double valor, int numeroDaConta);
 
-    public interface Transferencia {
+    double execute(double valor, int numeroDaConta, int numeroDaContaFavorecida);
 
-
-        void transferir(double valor, Conta destino, Conta origem);
-
-    }
 }
+
 

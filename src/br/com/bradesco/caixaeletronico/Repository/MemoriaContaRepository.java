@@ -1,5 +1,4 @@
 package br.com.bradesco.caixaeletronico.Repository;
-
 import br.com.bradesco.caixaeletronico.Repository.BaseRepository;
 import br.com.bradesco.caixaeletronico.model.Conta;
 
@@ -25,4 +24,6 @@ public class MemoriaContaRepository implements BaseRepository<Conta> {
         objeto.setNumeroDaConta(contas.size());
         contas.add(objeto);
     }
+
 }
+

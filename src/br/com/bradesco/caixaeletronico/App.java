@@ -1,8 +1,5 @@
 package br.com.bradesco.caixaeletronico;
 
-// SHIFT + F6 = RENOMEAR
-// CTRL + ALT + L = FORMATAR LAYOUT DO CÓDIGO
-
 import br.com.bradesco.caixaeletronico.services.SelecionarComando;
 
 public class App {

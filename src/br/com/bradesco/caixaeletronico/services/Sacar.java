@@ -2,8 +2,7 @@ package br.com.bradesco.caixaeletronico.services;
 
 public interface Sacar {
 
-    double execute (double valor, int numeroDaConta);
-
+    double execute (double valorASerSacado, int numeroDaConta);
 
 
 }

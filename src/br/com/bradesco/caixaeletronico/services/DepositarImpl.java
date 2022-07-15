@@ -18,10 +18,6 @@ public class DepositarImpl implements Depositar {
 
         conta.adicionaSaldo(valorASerDepositado);
 
-        System.out.println ("Depositando:" + valorASerDepositado);
-        System.out.println("Numero da conta:" + numeroDaConta);
-        System.out.println("Voce depositou R$"+valorASerDepositado);
-
         return valorASerDepositado;
     }
 }

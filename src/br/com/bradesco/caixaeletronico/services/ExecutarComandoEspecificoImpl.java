@@ -1,51 +1,28 @@
 package br.com.bradesco.caixaeletronico.services;
 
 import br.com.bradesco.caixaeletronico.Repository.MemoriaContaRepository;
-import br.com.bradesco.caixaeletronico.model.Conta;
 
 import java.util.Scanner;
 
 public class ExecutarComandoEspecificoImpl implements ExecutarComandoEspecifico {
 
-    private final Depositar deposito;
+    private final Depositar depositar;
     private final Sacar saque;
     private final AbrirConta abrirConta;
-
     private final Transferencias transferir;
 
 
 
-    public ExecutarComandoEspecificoImpl(int transferir) {
+    public ExecutarComandoEspecificoImpl() {
 
         MemoriaContaRepository repository = new MemoriaContaRepository();
 
-        this.deposito = new Depositar() {
 
-
-            @Override
-            public double execute(double valor, int numeroDaConta) {
-                return 0;
-            }
-        };
-
+        this.depositar = new DepositarImpl(repository);
         this.saque = new SacarImpl(repository);
         this.abrirConta = new AbrirContaImpl(repository);
-
-        this.transferir = new Transferencias() {
-
-            @Override
-            public double execute(double valor, int numeroDaConta) {
-                return 0;
-            }
-
-            void transferir(double valor, Conta destino, Conta origem) {
-
-            }
-
-
-        }; // pq tive que colocar ponto e virgula aqui...
+        this.transferir = new TransferenciasImpl(repository);
     }
-
 
 
     @Override // sobrepor o método da Interface
@@ -65,16 +42,13 @@ public class ExecutarComandoEspecificoImpl implements ExecutarComandoEspecifico 
             int numeroDaContaOrigem = entrada.nextInt();
             System.out.println("Digite o valor a ser depositado: ");
             double valorASerDepositado = entrada.nextInt();
-            System.out.println("Digite o numero da conta Favorecida");
-            int numeroDaConta = entrada.nextInt();
-            this.deposito.execute(valorASerDepositado, numeroDaContaOrigem);
             System.out.println("Voce depositou R$"+valorASerDepositado);
             System.out.println("Depósito finalizado!");
             System.out.println();
 
 
         } else if (comando == 3) {
-            System.out.println("Digite o número da conta Favorecida: ");
+            System.out.println("Digite o número da conta: ");
             int numeroDaConta = entrada.nextInt();
             System.out.println("Digite o valor a ser sacado: ");
             double valorASerSacado = entrada.nextInt();

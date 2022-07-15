@@ -3,7 +3,7 @@ package br.com.bradesco.caixaeletronico.services;
 import br.com.bradesco.caixaeletronico.Repository.MemoriaContaRepository;
 import br.com.bradesco.caixaeletronico.model.Conta;
 
-public class TransferenciasImpl implements Transferencias{
+public class TransferenciasImpl implements Transferencias {
 
     public TransferenciasImpl (MemoriaContaRepository repository) {
     }
@@ -28,6 +28,11 @@ public class TransferenciasImpl implements Transferencias{
             System.out.println("Opção Inválida");
 
         }
+        return valor;
+    }
+
+    @Override
+    public double execute(double valor, int numeroDaConta, int numeroDaContaFavorecida) {
         return valor;
     }
 }

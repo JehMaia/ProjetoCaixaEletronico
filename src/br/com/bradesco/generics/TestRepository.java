@@ -16,9 +16,9 @@ public class TestRepository {
         repository.adiciona(conta1);
         repository.adiciona(conta2);
 
-        System.out.println(repository.findById(0).getSaldo());
+        System.out.println(repository.findById(0).getSaldo(1000));
         System.out.println("Agora outra conta!");
-        System.out.println(repository.findById(1).getSaldo());
+        System.out.println(repository.findById(1).getSaldo(20));
     }
 
 

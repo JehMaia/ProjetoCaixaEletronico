@@ -5,12 +5,24 @@ public class Conta {
     private int numeroDaConta;
     private double saldo;
 
-    private int numerodaContaOrigem;
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public int getNumeroDaContaFavorecida(int numeroDaContaFavorecida) {
+        return numeroDaContaFavorecida;
+    }
+
+    public void setNumeroDaContaFavorecida(int numeroDaContaFavorecida) {
+    }
+
 
 
     public Conta() {
-        saldo = 0; // ideia: toda conta inicia com saldo zerado
+        saldo = 1000;
     }
+
 
 
     public int getNumeroDaConta() {
@@ -21,23 +33,17 @@ public class Conta {
         this.numeroDaConta = numeroDaConta;
     }
 
-    public int getNumerodaContaOrigem() {
-        return numerodaContaOrigem;
-    }
-
-    public void setNumerodaContaOrigem(int numeroDaConta) {
-        this.numerodaContaOrigem = numeroDaConta;
-    }
-
-    public double getSaldo() {
+    public double getSaldo(int saldo) {
         return saldo;
     }
+
+
 
     public void adicionaSaldo(double valorASerAdicionado) {
         saldo = saldo + valorASerAdicionado;
     }
 
-    public boolean retirarSaldo (double valorASerRetirado){
+    public boolean retirarSaldo(double valorASerRetirado) {
         if (saldo >= valorASerRetirado) {
             saldo = saldo - valorASerRetirado;
             return true;

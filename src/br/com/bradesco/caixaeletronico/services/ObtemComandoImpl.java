@@ -1,6 +1,5 @@
 package br.com.bradesco.caixaeletronico.services;
 
-
 import java.util.Scanner;
 
 public class ObtemComandoImpl implements ObtemComando {
