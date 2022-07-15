@@ -10,19 +10,11 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public int getNumeroDaContaFavorecida(int numeroDaContaFavorecida) {
-        return numeroDaContaFavorecida;
-    }
-
-    public void setNumeroDaContaFavorecida(int numeroDaContaFavorecida) {
-    }
-
 
 
     public Conta() {
         saldo = 1000;
     }
-
 
 
     public int getNumeroDaConta() {
@@ -38,7 +30,6 @@ public class Conta {
     }
 
 
-
     public void adicionaSaldo(double valorASerAdicionado) {
         saldo = saldo + valorASerAdicionado;
     }
@@ -52,5 +43,4 @@ public class Conta {
             return false;
         }
     }
-
 }
