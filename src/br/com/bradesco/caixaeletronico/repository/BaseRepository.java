@@ -1,5 +1,4 @@
-
-package br.com.bradesco.caixaeletronico.Repository;
+package br.com.bradesco.caixaeletronico.repository;
 
 import java.util.List;
 
@@ -11,4 +10,4 @@ public interface BaseRepository <T> {
 
     void adiciona (T Objeto) ;
 
-   }
+}

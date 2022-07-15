@@ -1,7 +1,7 @@
 package br.com.bradesco.caixaeletronico.services;
 
 import br.com.bradesco.caixaeletronico.model.Conta;
-import br.com.bradesco.caixaeletronico.Repository.MemoriaContaRepository;
+import br.com.bradesco.caixaeletronico.repository.MemoriaContaRepository;
 
 public class AbrirContaImpl implements AbrirConta {
 

@@ -5,4 +5,3 @@ public interface ExecutarComandoEspecifico {
     boolean execute(int comando);
 
 }
-

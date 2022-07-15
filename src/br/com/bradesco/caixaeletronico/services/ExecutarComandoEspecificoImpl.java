@@ -1,6 +1,6 @@
 package br.com.bradesco.caixaeletronico.services;
 
-import br.com.bradesco.caixaeletronico.Repository.MemoriaContaRepository;
+import br.com.bradesco.caixaeletronico.repository.MemoriaContaRepository;
 
 import java.util.Scanner;
 

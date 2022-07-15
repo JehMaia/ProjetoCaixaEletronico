@@ -1,5 +1,5 @@
-package br.com.bradesco.caixaeletronico.Repository;
-import br.com.bradesco.caixaeletronico.Repository.BaseRepository;
+package br.com.bradesco.caixaeletronico.repository;
+import br.com.bradesco.caixaeletronico.repository.BaseRepository;
 import br.com.bradesco.caixaeletronico.model.Conta;
 
 import java.util.ArrayList;
@@ -26,4 +26,3 @@ public class MemoriaContaRepository implements BaseRepository<Conta> {
     }
 
 }
-
