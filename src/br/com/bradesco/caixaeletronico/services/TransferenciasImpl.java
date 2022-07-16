@@ -16,7 +16,8 @@ public class TransferenciasImpl implements Transferencias{
         Conta conta;
         conta = repository.findById(numeroDaConta);
         conta.adicionaSaldo(valor);
-        System.out.printf("Transferência realizada! Seu saldo atual é de R$ %.2f !%n", conta.getSaldo());
+        System.out.printf("Seu saldo atual é de R$ %.2f !%n", conta.getSaldo());
+        System.out.println();
 
         return valor;
     }
