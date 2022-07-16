@@ -12,11 +12,11 @@ public class DepositarImpl implements Depositar {
     }
 
     @Override
-    public double execute(double valorASerDepositado, int numeroDaConta) {
+    public double execute(double valorASerDepositado, int numeroDaConta, String nomeDoFavorecido) {
         Conta conta;
         conta = repository.findById(numeroDaConta);
-
-        conta.adicionaSaldo(valorASerDepositado);
+       conta.adicionaSaldo(valorASerDepositado);
+        System.out.printf("Depósito realizado! Seu saldo atual é de R$ %.2f !%n", conta.getSaldo());
 
         return valorASerDepositado;
     }

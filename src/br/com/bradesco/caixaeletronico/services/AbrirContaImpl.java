@@ -16,7 +16,7 @@ public class AbrirContaImpl implements AbrirConta {
         Conta conta;
         conta = new Conta();
         repository.adiciona(conta);
-        System.out.printf("Sua conta foi Criada. Seja bem-vindo(a)! O número da sua conta é '%d' e o seu saldo atual é de R$ %.2f. %n", conta.getNumeroDaConta(), conta.getSaldo(1000));
+        System.out.printf("Sua conta foi Criada. Seja bem-vindo(a)! O número da sua conta é '%d' e o seu saldo atual é de R$ %.2f. %n", conta.getNumeroDaConta(), conta.getSaldo());
         return conta;
     }
 

@@ -4,18 +4,25 @@ public class Conta {
 
     private int numeroDaConta;
     private double saldo;
+    String nomeDoFavorecido;
 
+    public String getNomeDoFavorecido() {
+        return nomeDoFavorecido;
+    }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
+    public void setNomeDoFavorecido(String nomeDoFavorecido) {
+        this.nomeDoFavorecido = nomeDoFavorecido;
     }
 
 
 
+
+    // cria o construtor abaixo, ou modifica a linha acima para "private double saldo = 0;"
     public Conta() {
-        saldo = 1000;
+        saldo = 0; // ideia: toda conta inicia com saldo zerado
     }
 
+    // GET e SET
 
     public int getNumeroDaConta() {
         return numeroDaConta;
@@ -25,7 +32,7 @@ public class Conta {
         this.numeroDaConta = numeroDaConta;
     }
 
-    public double getSaldo(int saldo) {
+    public double getSaldo() {
         return saldo;
     }
 

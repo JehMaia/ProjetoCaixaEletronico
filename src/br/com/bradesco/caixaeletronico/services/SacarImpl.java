@@ -3,6 +3,8 @@ package br.com.bradesco.caixaeletronico.services;
 import br.com.bradesco.caixaeletronico.repository.MemoriaContaRepository;
 import br.com.bradesco.caixaeletronico.model.Conta;
 
+import java.util.Scanner;
+
 public class SacarImpl implements Sacar {
 
     public SacarImpl(MemoriaContaRepository repository) {
@@ -20,7 +22,8 @@ public class SacarImpl implements Sacar {
 
             Conta conta = new Conta();
             System.out.println("Saque realizado! ");
-            System.out.printf("Você sacou :"+valor); //como colocar os Reais depois do valor usando o PrintF?
+            System.out.printf("O valor retirado de sua conta foi R$ %.2f !%n", valor);
+            //System.out.printf("Você sacou :"+valor);
             System.out.println();
             System.out.println();
 

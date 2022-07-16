@@ -11,7 +11,8 @@ public class App {
         SelecionarComando selecionaComando = new SelecionarComando();
 
         while (selecionaComando.executar()) {
-            System.out.println(" Para continuar, escolha outra opção:");
+            System.out.println("Para continuar, escolha outra opção no Menu Abaixo:");
+            System.out.println();
         }
         System.out.println("Caixa eletrônico desligado!");
     }
