@@ -22,8 +22,4 @@ public class TestRepository {
         System.out.println(repository.findById(1).getSaldo());
     }
 
-
-
-
-
 }

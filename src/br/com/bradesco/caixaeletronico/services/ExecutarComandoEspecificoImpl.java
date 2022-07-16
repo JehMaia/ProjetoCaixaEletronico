@@ -9,7 +9,7 @@ public class ExecutarComandoEspecificoImpl implements ExecutarComandoEspecifico 
     private final Depositar depositar;
     private final Sacar saque;
     private final AbrirConta abrirConta;
-    private final Transferencias transferir; //Não entendi porque aqui fica pintadinho.
+    private final Transferencias transferir;
 
 
 
@@ -65,8 +65,6 @@ public class ExecutarComandoEspecificoImpl implements ExecutarComandoEspecifico 
             System.out.println("Digite o nome do Favorecido");
             String nomeDoFavorecido = entrada.next();
             System.out.printf("Você transferiu R$ %.2f para %s !%n", valorASerTransferido, nomeDoFavorecido);
-            System.out.println();
-            System.out.println("--------------------------------------");
             this.transferir.execute(valorASerTransferido, numeroDaConta, nomeDoFavorecido);
 
 

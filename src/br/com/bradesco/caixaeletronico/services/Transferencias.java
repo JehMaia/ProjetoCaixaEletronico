@@ -7,5 +7,4 @@ public interface Transferencias {
 
     double execute(double valor, int numeroDaConta, String nomeDoFavorecido);
 
-
 }

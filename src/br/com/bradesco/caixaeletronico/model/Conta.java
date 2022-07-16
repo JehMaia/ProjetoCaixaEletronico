@@ -15,9 +15,6 @@ public class Conta {
     }
 
 
-
-
-    // cria o construtor abaixo, ou modifica a linha acima para "private double saldo = 0;"
     public Conta() {
         saldo = 0; // ideia: toda conta inicia com saldo zerado
     }

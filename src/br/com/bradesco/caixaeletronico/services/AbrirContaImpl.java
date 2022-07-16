@@ -11,7 +11,7 @@ public class AbrirContaImpl implements AbrirConta {
         this.repository = repository;
     }
 
-    @Override // sobrepor o método da Interface
+    @Override
     public Conta execute() {
         Conta conta;
         conta = new Conta();

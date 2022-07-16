@@ -2,7 +2,7 @@ package br.com.bradesco.caixaeletronico.services;
 
 public class ListarComandosImpl implements ListarComandos {
 
-    @Override // sobrepor o método da Interface
+    @Override
     public void execute() {
 
         System.out.println("Digite 1, para Abrir uma conta.");
