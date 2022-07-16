@@ -47,10 +47,7 @@ public class ExecutarComandoEspecificoImpl implements ExecutarComandoEspecifico 
             System.out.printf("Você Depositou R$ %.2f para %s !%n", valorASerDepositado, nomeDoFavorecido);
             System.out.println("Transação finalizada!");
             System.out.println();
-            //this.depositar.execute( valorASerDepositado, numeroDaConta, nomeDoFavorecido);
-            //A linha acima era uma tentativa de retornar o saldo para ver se havia funcionado, mas
-            //quando eu coloco a linha acima, dá erro após o nome do favorecido.
-
+            this.depositar.execute( valorASerDepositado, numeroDaConta, nomeDoFavorecido);
 
 
         } else if (comando == 3) {
@@ -67,13 +64,11 @@ public class ExecutarComandoEspecificoImpl implements ExecutarComandoEspecifico 
             double valorASerTransferido = entrada.nextInt();
             System.out.println("Digite o nome do Favorecido");
             String nomeDoFavorecido = entrada.next();
-            //System.out.println("Vocês transferiu:"+ valorASerTransferido);
             System.out.printf("Você transferiu R$ %.2f para %s !%n", valorASerTransferido, nomeDoFavorecido);
             System.out.println();
             System.out.println("--------------------------------------");
-            //this.transferir.execute(valorASerTransferido, numeroDaConta);
-            //A linha acima era uma tentativa de retornar o saldo para ver se havia funcionado, mas
-            //quando eu coloco a linha acima, dá erro e o programa quebra.
+            this.transferir.execute(valorASerTransferido, numeroDaConta, nomeDoFavorecido);
+
 
         } else {
             System.out.println("Comando inválido!");

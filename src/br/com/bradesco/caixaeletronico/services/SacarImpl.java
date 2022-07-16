@@ -23,7 +23,7 @@ public class SacarImpl implements Sacar {
             Conta conta = new Conta();
             System.out.println("Saque realizado! ");
             System.out.printf("O valor retirado de sua conta foi R$ %.2f !%n", valor);
-            //System.out.printf("Você sacou :"+valor);
+            System.out.printf("Transferência realizada! Seu saldo atual é de R$ %.2f !%n", conta.getSaldo());
             System.out.println();
             System.out.println();
 
